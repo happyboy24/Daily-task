@@ -1,0 +1,16 @@
+import unittest
+from breakfast import *
+
+class BreakfastTest(unittest.TestCase):
+	def test_that_the_sentence_works(self):
+		actual = the_sentence("eniife")
+		expected = ""The lord is good.""
+		self.assertEqual(actual,expected)
+	
+	def test_that_the_sentence_only_takes_in_words(self):
+		actual = the_sentence("12345")
+		expected = "Invalid input!"
+		self.assertEqual(actual,expected)
+		actual = the_sentence("en11fe")
+		expected = "Invalid input!"
+		self.assertEqual(actual,expected)
