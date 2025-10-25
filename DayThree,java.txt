@@ -1,0 +1,6 @@
+public class DayThree{
+
+
+	public int totalNumberOfWords() {
+
+		return 0;
